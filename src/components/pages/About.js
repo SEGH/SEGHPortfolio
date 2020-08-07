@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../../assets/bioimage.jpeg";
 
 export default function About() {
     return (
@@ -11,7 +12,7 @@ export default function About() {
                 <div className="row no-gutters bg-light">
 
                     <div className="col-md-4">
-                        <img src="assets/images/bioimage.jpeg" class="card-img pb-4 rounded-0"
+                        <img src={image} class="card-img pb-4 rounded-0"
                             alt="Susan Holland profile" />
                     </div>
 
