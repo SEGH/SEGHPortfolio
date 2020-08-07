@@ -1,9 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
     return (
-        <h1>SEGH</h1>
+        <Router>
+            <Navbar />
+        </Router>
     );
 }
 
