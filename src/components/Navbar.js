@@ -14,7 +14,7 @@ export default function Navbar() {
             </button>
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <Link to="/" class={location.pathname === "/" ? "nav-link active" : "nav-link"}>About</Link>
                     </li>
                     <li class="nav-item">
