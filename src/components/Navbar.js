@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import resume from "../assets/Resume.pdf";
 
 export default function Navbar() {
     const location = useLocation();
@@ -19,6 +20,9 @@ export default function Navbar() {
                     </li>
                     <li class="nav-item">
                         <Link to="portfolio" class={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>Portfolio</Link>
+                    </li>
+                    <li class="nav-item">
+                        <a href={resume} target="_blank" class="nav-link">Resume</a>
                     </li>
                     <li class="nav-item">
                         <Link to="contact" class={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contact</Link>
