@@ -1,0 +1,13 @@
+.navbar-brand {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.card-footer {
+    box-shadow: inset 0 0 20px #cd880f, 0 5px 8px -6px #17141F, 0 -4px 5px -6px #17141F;
+}
+
+.card-img {
+    box-shadow: 0 -4px 8px -6px #17141F;
+}
