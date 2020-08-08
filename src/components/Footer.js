@@ -1,32 +1,33 @@
 import React from "react";
+import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
 
 export default function Footer() {
     return (
-        <footer className="navbar mt-auto navbar-dark bg-dark justify-content-center">
+        <Navbar className="mt-auto justify-content-center" dark color="dark">
 
-        <ul className="nav justify-content-center">
+            <Nav className="nav justify-content-center">
 
-            <li className="nav-item">
-                <a className="nav-link text-white" href="mailto:segh@fastmail.com" target="_blank">
-                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                </a>
-            </li>
+                <NavItem>
+                    <NavLink className="text-white" href="mailto:segh@fastmail.com" target="_blank">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    </NavLink>
+                </NavItem>
 
-            <li className="nav-item">
-                <a className="nav-link text-white" href="https://github.com/SEGH" target="_blank">
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                </a>
-            </li>
+                <NavItem>
+                    <NavLink className="text-white" href="https://github.com/SEGH" target="_blank">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </NavLink>
+                </NavItem>
 
-            <li className="nav-item">
-                <a className="nav-link text-white" href="https://www.linkedin.com/in/susan-ella-grace-holland/"
-                    target="_blank">
-                    <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                </a>
-            </li>
+                <NavItem>
+                    <NavLink className="text-white" href="https://www.linkedin.com/in/susan-ella-grace-holland/"
+                        target="_blank">
+                        <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </NavLink>
+                </NavItem>
 
-        </ul>
+            </Nav>
 
-    </footer>
+        </Navbar>
     );
 }
