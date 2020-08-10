@@ -1,3 +1,21 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar-brand {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
@@ -10,4 +28,10 @@
 
 .card-img {
     box-shadow: 0 -4px 8px -6px #17141F;
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
 }
