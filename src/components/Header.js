@@ -24,9 +24,6 @@ export default function Header() {
                     <NavItem>
                         <a href={resume} target="_blank" class="nav-link">Resume</a>
                     </NavItem>
-                    <NavItem>
-                        <Link to="contact" class={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contact</Link>
-                    </NavItem>
                 </Nav>
             </Collapse>
 
