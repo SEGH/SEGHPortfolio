@@ -2,5 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "bootswatch/dist/pulse/bootstrap.min.css";
+import "./assets/style.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
