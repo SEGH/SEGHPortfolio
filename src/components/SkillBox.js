@@ -55,7 +55,7 @@ export default function SkillBox() {
             </Col>
             <Col xs="4" md="3" lg="2">
                 <DevIcon icon="materializecss" width="3.5em" style={{ fill: "#444" }} />
-                <p>Materialize</p>
+                <p style={{ marginTop: "5px" }}>Materialize</p>
             </Col>
             <Col xs="4" md="3" lg="2">
                 <FontAwesomeIcon icon={faJsSquare} size="3x" />
