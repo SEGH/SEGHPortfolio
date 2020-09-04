@@ -27,6 +27,11 @@ body {
     padding-top: 15px;
 }
 
+#skillIcons .col-lg-2 {
+    text-align: center;
+    padding: 15px 0px;
+}
+
 #skillIcons  p {
     margin-top: 11px;
     margin-bottom: 0;
