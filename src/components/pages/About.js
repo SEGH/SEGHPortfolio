@@ -1,8 +1,7 @@
 import React from "react";
 import image from "../../assets/bioimage.jpeg";
 import { Jumbotron, Card, CardText, CardBody, Row, Col } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faGitAlt, faNode, faHtml5, faJsSquare, faCss3Alt, faBootstrap } from "@fortawesome/free-brands-svg-icons";
+import SkillBox from "../SkillBox";
 
 export default function About() {
     return (
@@ -26,41 +25,7 @@ export default function About() {
                                 Full Stack Web Developer with a passion for balancing form and function to create efficient, enjoyable applications. Recently earned a Full Stack Coding Certificate from the University of Pennsylvania. Proven skills from experience running small businesses include problem-solving in fast-paced environments, organization, and ability to quickly adapt to changing circumstances. Reputation among supervisors and peers for clear communication, attention to detail, and enthusiastic collaboration.
                             </CardText>
 
-                            <Row id="skillIcons">
-                                <Col xs="4" md="3">
-                                    <FontAwesomeIcon icon={faReact} spin size="3x" />
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <FontAwesomeIcon icon={faGitAlt} size="3x" />
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <FontAwesomeIcon icon={faNode} size="3x" />
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <FontAwesomeIcon icon={faHtml5} size="3x" />
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <FontAwesomeIcon icon={faJsSquare} size="3x" />
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <FontAwesomeIcon icon={faCss3Alt} size="3x" />
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <FontAwesomeIcon icon={faBootstrap} size="3x" />
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <i className="fab icon-mysql" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <i className="fab icon-mongodb" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <i className="fab icon-heroku" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
-                                </Col>
-                                <Col xs="4" md="3">
-                                    <i className="fab icon-jquery" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
-                                </Col>
-                            </Row>
+                            <SkillBox />
 
                         </CardBody>
                     </Col>
