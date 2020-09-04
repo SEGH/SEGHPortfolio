@@ -23,11 +23,7 @@ export default function About() {
                     <Col md="8">
                         <CardBody className="p-0 px-md-4 mt-n1">
                             <CardText>
-                                Now a web developer based in Philadelphia, I previously worked for fifteen years in the
-                                coffee industry, most recently for a small local coffee roaster. I first started my
-                                coding journey as a hobby when I came across the game Code Combat and was hooked. I also
-                                enjoy other hobbies that help to strengthen my problem-solving muscles, including
-                                sewing, home DIY projects, and playing piano.
+                                Full Stack Web Developer with a passion for balancing form and function to create efficient, enjoyable applications. Recently earned a Full Stack Coding Certificate from the University of Pennsylvania. Proven skills from experience running small businesses include problem-solving in fast-paced environments, organization, and ability to quickly adapt to changing circumstances. Reputation among supervisors and peers for clear communication, attention to detail, and enthusiastic collaboration.
                             </CardText>
 
                             <Row id="skillIcons">
@@ -40,7 +36,7 @@ export default function About() {
                                 <Col xs="4" md="3">
                                     <FontAwesomeIcon icon={faNode} size="3x" />
                                 </Col>
-                                <Col  xs="4" md="3">
+                                <Col xs="4" md="3">
                                     <FontAwesomeIcon icon={faHtml5} size="3x" />
                                 </Col>
                                 <Col xs="4" md="3">
@@ -53,16 +49,16 @@ export default function About() {
                                     <FontAwesomeIcon icon={faBootstrap} size="3x" />
                                 </Col>
                                 <Col xs="4" md="3">
-                                    <i className="fab icon-mysql" style={{ fontSize: "3em", position: "relative", top: "-10px"}}></i>
+                                    <i className="fab icon-mysql" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
                                 </Col>
                                 <Col xs="4" md="3">
-                                    <i className="fab icon-mongodb" style={{ fontSize: "3em", position: "relative", top: "-10px"}}></i>
+                                    <i className="fab icon-mongodb" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
                                 </Col>
                                 <Col xs="4" md="3">
-                                    <i className="fab icon-heroku" style={{ fontSize: "3em", position: "relative", top: "-10px"}}></i>
+                                    <i className="fab icon-heroku" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
                                 </Col>
                                 <Col xs="4" md="3">
-                                    <i className="fab icon-jquery" style={{ fontSize: "3em", position: "relative", top: "-10px"}}></i>
+                                    <i className="fab icon-jquery" style={{ fontSize: "3em", position: "relative", top: "-10px" }}></i>
                                 </Col>
                             </Row>
 
