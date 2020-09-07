@@ -10,9 +10,10 @@ export default function PortfolioCard(props) {
             <img src={props.image} className="card-img rounded-top" alt={props.alt} />
             <CardFooter className="rounded-bottom">
                 <h4 className="card-title text-center">{props.title}</h4>
+                <p>{props.description}</p>
                 <div className="d-flex justify-content-around">
-                    <a href={props.deployedLink} target="_blank" className="btn"><FontAwesomeIcon icon={faExternalLinkAlt} size="3x" /></a>
-                    <a href={props.repoLink} target="_blank" className="btn"><FontAwesomeIcon icon={faGithubSquare} size="3x" /></a>
+                    <a href={props.deployedLink} target="_blank" title="Deployed App" className="btn"><FontAwesomeIcon icon={faExternalLinkAlt} size="3x" /></a>
+                    <a href={props.repoLink} target="_blank" title="GitHub Repo" className="btn"><FontAwesomeIcon icon={faGithubSquare} size="3x" /></a>
                 </div>
             </CardFooter>
         </Card>
