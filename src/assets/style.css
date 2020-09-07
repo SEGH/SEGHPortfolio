@@ -46,6 +46,13 @@ body {
     color: #206E38;
     font-variant: small-caps;
 }
+
+.card-footer  p {
+    color: #206E38;
+    height: 5em;
+    text-align: center;
+}
+
 .card-img {
     box-shadow: 0 -4px 8px -6px #17141F;
 }
