@@ -47,9 +47,17 @@ body {
     margin-top: -10em;
 }
 
-.card-footer svg, .card-footer h4 {
+.card-footer h4 {
     color: #206E38;
     font-variant: small-caps;
+}
+
+.card-footer .btn {
+    color: #32a14e;
+}
+
+.card-footer .btn :hover {
+    color: #206E38;
 }
 
 .card-footer  p {
