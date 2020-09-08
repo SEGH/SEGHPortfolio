@@ -58,7 +58,11 @@ body {
     text-align: center;
 }
 
-.card-img {
+#main-bio .card-img {
+    box-shadow: 0 5px 8px -6px #17141F, 0 -4px 8px -6px #17141F;
+}
+
+#portfolio .card-img {
     box-shadow: 0 -4px 8px -6px #17141F;
 }
 
