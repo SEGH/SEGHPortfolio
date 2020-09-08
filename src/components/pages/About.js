@@ -14,8 +14,8 @@ export default function About() {
 
                 <Row className="no-gutters bg-light">
 
-                    <Col md="4">
-                        <img src={image} class="card-img pb-4 rounded-0"
+                    <Col md="4" className="pb-4">
+                        <img src={image} className="card-img rounded-0"
                             alt="Susan Holland profile" />
                     </Col>
 
