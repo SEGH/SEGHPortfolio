@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faGitAlt, faNode, faHtml5, faJsSquare, faCss3Alt, faBootstrap } from "@fortawesome/free-brands-svg-icons";
-// import DevIcon from "devicon-react-svg";
+import { DiMaterializecss } from "react-icons/di";
 
 export default function SkillBox() {
     return (
@@ -54,8 +54,8 @@ export default function SkillBox() {
                 <p>Bootstrap</p>
             </Col>
             <Col xs="4" md="3" lg="2">
-                {/* <DevIcon icon="materializecss" width="3.5em" style={{ fill: "#444" }} /> */}
-                <p style={{ marginTop: "54px" }}>Materialize</p>
+                <DiMaterializecss width="3em" style={{ fontSize: "3.5em"}} />
+                <p style={{ marginTop: "5px" }}>Materialize</p>
             </Col>
             <Col xs="4" md="3" lg="2">
                 <FontAwesomeIcon icon={faJsSquare} size="3x" />
