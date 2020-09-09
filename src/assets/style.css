@@ -67,6 +67,14 @@ body {
     transition: 1s ease;
 }
 
+#toolBox {
+    height: 42px;
+}
+
+#toolBox svg, #toolBox i {
+    color: #32a14e;
+}
+
 #main-bio .card-img {
     box-shadow: 0 5px 8px -6px #17141F, 0 -4px 8px -6px #17141F;
 }
