@@ -64,6 +64,7 @@ body {
     color: #206E38;
     height: 5em;
     text-align: center;
+    transition: 1s ease;
 }
 
 #main-bio .card-img {
@@ -72,6 +73,21 @@ body {
 
 #portfolio .card-img {
     box-shadow: 0 -4px 8px -6px #17141F;
+    cursor: pointer;
+}
+
+#portfolio .card-img:hover {
+    animation-name: openCard;
+    animation-delay: .6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes openCard {
+    0% {margin-top: 0em; margin-bottom: 0em;}
+    50% {margin-top: -10em; margin-bottom: 10em;}
+    100% {margin-top: 0em; margin-bottom: 0em; z-index: 99; box-shadow: 0 5px 8px -6px #17141F, 0 -4px 8px -6px #17141F;}
 }
 
 #footer {
