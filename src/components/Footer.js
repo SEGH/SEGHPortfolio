@@ -6,8 +6,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
     return (
-        <div>
-            <Navbar className="mt-auto justify-content-center" dark color="dark">
+        <div className="mt-auto">
+            <Navbar className="justify-content-center" dark color="dark">
 
                 <Nav className="nav justify-content-center">
 
