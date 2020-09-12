@@ -9,24 +9,26 @@ export default function Header() {
     const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
-        <Navbar expand="lg" dark color="dark">
+        <div>
+            <Navbar expand="lg" dark color="dark">
 
-            <NavbarBrand href="/">Susan Holland</NavbarBrand>
-            <NavbarToggler onClick={toggleNavbar} />
-            <Collapse isOpen={!collapsed} navbar>
-                <Nav className="ml-auto" navbar>
-                    <NavItem>
-                        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>About</Link>
-                    </NavItem>
-                    <NavItem>
-                        <Link to="portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>Portfolio</Link>
-                    </NavItem>
-                    <NavItem>
-                        <a href={resume} target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
-                    </NavItem>
-                </Nav>
-            </Collapse>
+                <NavbarBrand href="/">Susan Holland</NavbarBrand>
+                <NavbarToggler onClick={toggleNavbar} />
+                <Collapse isOpen={!collapsed} navbar>
+                    <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>About</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link to="portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>Portfolio</Link>
+                        </NavItem>
+                        <NavItem>
+                            <a href={resume} target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
 
-        </Navbar>
+            </Navbar>
+        </div>
     )
 }
