@@ -97,3 +97,7 @@ body {
     50% {margin-top: -10em; margin-bottom: 10em;}
     100% {margin-top: 0em; margin-bottom: 0em; z-index: 99; box-shadow: 0 5px 8px -6px #17141F, 0 -4px 8px -6px #17141F;}
 }
+
+#portfolio .card-footer {
+    z-index: 10;
+}
