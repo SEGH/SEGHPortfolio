@@ -21,12 +21,20 @@ body {
     flex-direction: column;
 }
 
+@media (min-width: 1400px) {
+    .container-md {
+        max-width: 1350px;
+    }
+}
+
+/* header */
 .navbar-brand {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
     font-weight: 300;
 }
 
+/* about page */
 #skillIcons .col-md-3, #skillIcons .col-xs-4 {
     text-align: center;
     padding-top: 15px;
@@ -42,6 +50,11 @@ body {
     margin-bottom: 0;
 }
 
+#main-bio .card-img {
+    box-shadow: 0 5px 8px -6px #17141F, 0 -4px 8px -6px #17141F;
+}
+
+/* portfolio page */
 .card-footer {
     background: linear-gradient(
         to top,
@@ -78,10 +91,6 @@ body {
 
 #toolBox svg, #toolBox i {
     color: #32a14e;
-}
-
-#main-bio .card-img {
-    box-shadow: 0 5px 8px -6px #17141F, 0 -4px 8px -6px #17141F;
 }
 
 #portfolio .card-img {
