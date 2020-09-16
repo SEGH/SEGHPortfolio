@@ -8,6 +8,11 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    background-image: url("IMG_0049.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
 }
 
 #root {
