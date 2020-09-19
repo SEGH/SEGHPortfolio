@@ -12,7 +12,7 @@ export default function Footer() {
                 <Nav className="nav justify-content-center">
 
                     <NavItem>
-                        <NavLink className="text-white" href="mailto:segh@fastmail.com" target="_blank">
+                        <NavLink className="text-white" href="mailto:SEG.Holland@gmail.com" target="_blank">
                             <FontAwesomeIcon icon={faEnvelope} size="2x" />
                         </NavLink>
                     </NavItem>
