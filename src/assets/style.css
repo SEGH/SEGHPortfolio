@@ -11,7 +11,7 @@ body {
     background-image: url("greenLight.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left -1.2em;
+    background-position: left;
     background-attachment: fixed;
 }
 
