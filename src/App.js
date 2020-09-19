@@ -10,7 +10,7 @@ function App() {
     return (
         <Router>
             <Header />
-            <Container fluid="md">
+            <Container fluid="md" className="mt-5 pt-5">
                 <Route exact path="/" component={About} />
                 <Route exact path="/portfolio" component={Portfolio} />
             </Container>
