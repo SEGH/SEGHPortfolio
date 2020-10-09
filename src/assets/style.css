@@ -115,3 +115,17 @@ body {
 #portfolio .card-footer {
     z-index: 10;
 }
+
+/* footer */
+
+#footer p {
+    font-size: 10px;
+}
+
+#footer li:hover {
+    color: rgba(255,255,255,0.9);
+}
+
+#footer li {
+    width: 6rem;
+}
