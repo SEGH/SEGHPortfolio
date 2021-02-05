@@ -2,25 +2,25 @@
 
   [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  [Deployed App](https://segh.herokuapp.com)
+  [Deployed App](https://segh.dev)
 
   ## Description
   This is a React app portfolio to showcase my web development projects. I used the reactstrap node module for a css framework and the react router dom for routing.
 
   ### 1025 px
 
-  <img src="./src/assets/1025about.png" width="450" />   <img src="./src/assets/1025portfolio.png" width="280" />
+  <img src="./src/assets/1025about.png" width="435" />   <img src="./src/assets/1025portfolio.png" width="295" />
 
   ### 768 px
 
-  <img src="./src/assets/768about.png" width="300" />   <img src="./src/assets/768portfolio.png" width="150" />
+  <img src="./src/assets/768about.png" width="350" />   <img src="./src/assets/768portfolio.png" width="153" />
 
   ### 375 px
 
-  <img src="./src/assets/375about.png" width="300" />   <img src="./src/assets/375portfolio.png" width="100" />
+  <img src="./src/assets/375about.png" width="300" />   <img src="./src/assets/375portfolio.png" width="103" />
 
   ## Questions
-  Please contact me with any questions through my GitHub profile [SEGH](https://github.com/SEGH) or [email](mailto:segh@fastmail.com)
+  Please contact me with any questions through my GitHub profile [SEGH](https://github.com/SEGH) or [email](mailto:susan@segh.dev)
 
   ## License
   Licensed under the MIT License
