@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-image: url("greenLight.png");
+    background-image: url("greenLight.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
