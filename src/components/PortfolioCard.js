@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Card, CardFooter } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faNode, faHtml5, faJsSquare, faCss3Alt, faBootstrap, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
@@ -7,15 +7,11 @@ import { DiMaterializecss } from "react-icons/di";
 
 export default function PortfolioCard({image, svg, alt, title, description, deployedLink, repoLink, tools}) {
     const [imageSource, setSource] = useState(svg);
-
-    useEffect(() => {
-        const img = new Image();
-        img.src = image;
-
-        img.onload = () => {
-            setSource(image)
-        }
-    }, [image]);
+    const img = new Image();
+    img.src = image;
+    img.onload = () => {
+        setSource(image)
+    }
 
     return (
         <Card className="col-sm-6 col-lg-4 bg-light border-0 text-light py-3">
