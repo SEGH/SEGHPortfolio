@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-position: left;
     background-attachment: fixed;
+    transition: background-image 3s;
 }
 
 #root {
