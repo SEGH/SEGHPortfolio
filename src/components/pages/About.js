@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import image from "../../assets/bioimage.jpeg";
+import svg from "../../assets/bioimage.svg";
 import { Jumbotron, Card, CardText, CardBody, Row, Col } from "reactstrap";
 import SkillBox from "../SkillBox";
 
 export default function About() {
+    const [source, setSource] = useState(svg);
+
+    useEffect(() => {
+        setSource(svg);
+
+        const img = new Image();
+        img.src = image;
+
+        img.onload = () => {
+            setSource(image)
+        }
+    }, []);
+
     return (
         <Jumbotron id="main-bio" className="bg-light shadow-lg rounded mt-5 p-4">
 
@@ -15,7 +29,7 @@ export default function About() {
                 <Row className="no-gutters bg-light">
 
                     <Col md="4" className="pb-4">
-                        <img src={image} className="card-img rounded-0"
+                        <img src={source} className="card-img rounded-0"
                             alt="Susan Holland profile" />
                     </Col>
 
