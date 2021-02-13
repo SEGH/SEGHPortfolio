@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Card, CardFooter } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faNode, faHtml5, faJsSquare, faCss3Alt, faBootstrap, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
@@ -6,9 +6,20 @@ import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 import { DiMaterializecss } from "react-icons/di";
 
 export default function PortfolioCard(props) {
+    const [imageSource, setSource] = useState(props.svg);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = props.image;
+
+        img.onload = () => {
+            setSource(props.image)
+        }
+    }, []);
+
     return (
         <Card className="col-sm-6 col-lg-4 bg-light border-0 text-light py-3">
-            <img src={props.image} className="card-img rounded-top" alt={props.alt} />
+            <img src={imageSource} className="card-img rounded-top" alt={props.alt} />
             <CardFooter className="rounded-bottom">
                 <div className="d-flex justify-content-between pb-1">
                     <a href={props.deployedLink} target="_blank" rel="noopener noreferrer" title="Deployed App" className="btn"><FontAwesomeIcon icon={faExternalLinkAlt} size="2x" /></a>
