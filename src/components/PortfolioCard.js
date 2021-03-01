@@ -6,6 +6,7 @@ import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 import { DiMaterializecss } from "react-icons/di";
 
 export default function PortfolioCard({image, svg, alt, title, description, deployedLink, repoLink, tools}) {
+    const [loaded, setLoaded] = useState(false);
     const [imageSource, setSource] = useState(svg);
     const img = new Image();
     img.src = image;
@@ -14,8 +15,8 @@ export default function PortfolioCard({image, svg, alt, title, description, depl
     }
 
     return (
-        <Card className="col-sm-6 col-lg-4 bg-light border-0 text-light py-3">
-            <img src={imageSource} className="card-img rounded-top" alt={alt} />
+        <Card className="col-sm-6 col-lg-4 bg-light border-0 text-light py-3" style={{ visibility: loaded && "visible" }}>
+            <img src={imageSource} className="card-img rounded-top" alt={alt} onLoad={() => {setLoaded(true)}} />
             <CardFooter className="rounded-bottom">
                 <div className="d-flex justify-content-between pb-1">
                     <a href={deployedLink} target="_blank" rel="noopener noreferrer" title="Deployed App" className="btn"><FontAwesomeIcon icon={faExternalLinkAlt} size="2x" /></a>
