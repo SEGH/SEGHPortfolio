@@ -56,6 +56,14 @@ body {
 }
 
 /* portfolio page */
+#portfolio {
+    min-height: 100vh;
+}
+
+#portfolio .row .card {
+    visibility: hidden;
+}
+
 .card-footer {
     background: linear-gradient(
         to top,
