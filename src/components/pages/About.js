@@ -5,6 +5,7 @@ import { Jumbotron, Card, CardText, CardBody, Row, Col } from "reactstrap";
 import SkillBox from "../SkillBox";
 
 export default function About() {
+    const [loaded, setLoaded] = useState(false);
     const [source, setSource] = useState(svg);
     const img = new Image();
     img.src = image;
@@ -14,7 +15,7 @@ export default function About() {
     }
 
     return (
-        <Jumbotron id="main-bio" className="bg-light shadow-lg rounded mt-5 p-4">
+        <Jumbotron id="main-bio" className="bg-light shadow-lg rounded mt-5 p-4" style={{ opacity: loaded && 1 }}>
 
             <h2 className="display-5">About Me</h2>
             <hr className="my-4" />
@@ -25,7 +26,7 @@ export default function About() {
 
                     <Col md="4" className="pb-4">
                         <img src={source} className="card-img rounded-0"
-                            alt="Susan Holland profile" />
+                            alt="Susan Holland profile" onLoad={() => {setLoaded(true)}} />
                     </Col>
 
                     <Col md="8">
