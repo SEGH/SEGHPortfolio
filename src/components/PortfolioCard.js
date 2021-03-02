@@ -15,7 +15,7 @@ export default function PortfolioCard({image, svg, alt, title, description, depl
     }
 
     return (
-        <Card className="col-sm-6 col-lg-4 bg-light border-0 text-light py-3" style={{ visibility: loaded && "visible" }}>
+        <Card className="col-sm-6 col-lg-4 bg-light border-0 text-light py-3" style={{ opacity: loaded && 1 }}>
             <img src={imageSource} className="card-img rounded-top" alt={alt} onLoad={() => {setLoaded(true)}} />
             <CardFooter className="rounded-bottom">
                 <div className="d-flex justify-content-between pb-1">
