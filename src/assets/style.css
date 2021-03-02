@@ -36,6 +36,11 @@ body {
 }
 
 /* about page */
+#main-bio {
+    opacity: 0;
+    transition: opacity 5s;
+}
+
 #skillIcons .col-md-3, #skillIcons .col-xs-4 {
     text-align: center;
     padding-top: 15px;
