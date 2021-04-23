@@ -11,7 +11,7 @@ export default function Footer() {
 
     return (
         <div id="footer" className="mt-auto">
-            <Navbar className="justify-content-center pt-3 pb-3" dark color="dark">
+            <Navbar className="justify-content-center pt-3 pb-3" dark color="transparent">
 
                 <Nav className="nav justify-content-center">
 

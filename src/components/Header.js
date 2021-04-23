@@ -10,7 +10,7 @@ export default function Header() {
 
     return (
         <div>
-            <Navbar expand="lg" dark color="dark" fixed="top">
+            <Navbar expand="lg" dark color="transparent" fixed="top">
 
                 <NavbarBrand href="/">Susan Holland</NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} />
