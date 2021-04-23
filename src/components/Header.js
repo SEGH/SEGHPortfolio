@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from "reactstrap";
 import resume from "../assets/Resume.pdf";
@@ -8,9 +8,21 @@ export default function Header() {
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
 
+    const [scrollTop, setScrollTop] = useState(document.body.scrollTop || document.documentElement.scrollTop);
+
+    useEffect(() => {
+        const handleScroll = () => setScrollTop(document.body.scrollTop || document.documentElement.scrollTop);
+
+        document.addEventListener("scroll", handleScroll);
+
+        return () => document.removeEventListener("scroll", handleScroll);
+    }, [])
+
+    console.log(scrollTop)
+
     return (
         <div>
-            <Navbar expand="lg" dark color="transparent" fixed="top">
+            <Navbar id="headerNav" expand="lg" dark className={scrollTop > 100 ? "bg-solid" : "bg-trans"} fixed="top">
 
                 <NavbarBrand href="/">Susan Holland</NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} />

@@ -35,6 +35,17 @@ body {
 }
 
 /* header */
+#headerNav {
+    transition: background-color .5s;
+}
+
+.bg-solid {
+    background-color: #364543;
+}
+.bg-trans {
+    background-color: transparent;
+}
+
 .navbar-brand {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
