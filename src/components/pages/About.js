@@ -23,14 +23,14 @@ export default function About() {
 
                     <Col md="4" className="pb-4">
                         <img src={source} className="card-img rounded-circle"
-                            alt="Susan Holland profile" onLoad={() => {setLoaded(true)}} />
+                            alt="Susan Holland profile" onLoad={() => { setLoaded(true) }} />
                     </Col>
 
                     <Col md="8">
-                    <h2 className="display-3 text-end">Hello World! I'm Susan</h2>
-                        <CardBody className="p-0 px-md-4 mt-n1">
+                        <h2 className="display-3 px-md-4">Hello World! I'm Susan</h2>
+                        <CardBody className="p-0 px-md-4 lead">
                             <CardText>
-                                Full Stack Web Developer with a passion for balancing form and function to create efficient, enjoyable applications. Recently earned a Full Stack Coding Certificate from the University of Pennsylvania. Proven skills from experience running small businesses include problem-solving in fast-paced environments, organization, and ability to quickly adapt to changing circumstances. Reputation among supervisors and peers for clear communication, attention to detail, and enthusiastic collaboration.
+                                A purpose-driven Full Stack Web Developer with a passion for balancing form and function to create efficient, enjoyable applications. Proven skills from a career in the foodservice industry include problem-solving in fast-paced environments, organization, and the ability to quickly adapt to changing circumstances. Reputation among supervisors, clients, and peers for clear communication, attention to detail, and enthusiastic collaboration. Eager to combine teamwork experience with technical skills to help find creative solutions when implementing new features and products.
                             </CardText>
 
                         </CardBody>
