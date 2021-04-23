@@ -18,8 +18,6 @@ export default function Header() {
         return () => document.removeEventListener("scroll", handleScroll);
     }, [])
 
-    console.log(scrollTop)
-
     return (
         <div>
             <Navbar id="headerNav" expand="lg" dark className={scrollTop > 100 ? "bg-solid" : "bg-trans"} fixed="top">
