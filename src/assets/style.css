@@ -57,8 +57,12 @@ body {
     letter-spacing: 1px;
 }
 
-#main-bio p {
+#main-bio .card p {
     text-align: justify;
+}
+
+#skillIcons {
+    margin: 5em 0;
 }
 
 #skillIcons .col-md-3, #skillIcons .col-xs-4 {
