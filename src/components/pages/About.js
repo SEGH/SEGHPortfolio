@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import image from "../../assets/bioimage.jpeg";
 import svg from "../../assets/bioimage.svg";
-import { Jumbotron, Card, CardText, CardBody, Row, Col } from "reactstrap";
+import { Card, CardText, CardBody, Row, Col } from "reactstrap";
 import SkillBox from "../SkillBox";
 
 export default function About() {
