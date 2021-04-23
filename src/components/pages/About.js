@@ -15,14 +15,13 @@ export default function About() {
     }
 
     return (
-        <Jumbotron id="main-bio" className="bg-light shadow-lg rounded mt-5 p-4" style={{ opacity: loaded && 1 }}>
+        <main id="main-bio" style={{ opacity: loaded && 1 }}>
 
             <h2 className="display-5">About Me</h2>
-            <hr className="my-4" />
 
-            <Card className="border-0">
+            <Card className="border-0 bg-transparent">
 
-                <Row className="no-gutters bg-light">
+                <Row className="no-gutters bg-transparent">
 
                     <Col md="4" className="pb-4">
                         <img src={source} className="card-img rounded-0"
@@ -44,6 +43,6 @@ export default function About() {
 
             </Card>
 
-        </Jumbotron>
+        </main>
     );
 }
