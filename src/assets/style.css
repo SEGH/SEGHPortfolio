@@ -22,6 +22,12 @@ body {
     flex-direction: column;
 }
 
+.container-md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (min-width: 1400px) {
     .container-md {
         max-width: 1350px;
@@ -39,6 +45,20 @@ body {
 #main-bio {
     opacity: 0;
     transition: opacity 5s;
+    color: white;
+}
+
+#main-bio .card {
+    max-width: 1100px;
+    margin: 5em 0;
+}
+
+#main-bio h2 {
+    letter-spacing: 1px;
+}
+
+#main-bio p {
+    text-align: justify;
 }
 
 #skillIcons .col-md-3, #skillIcons .col-xs-4 {
