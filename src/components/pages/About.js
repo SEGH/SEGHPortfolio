@@ -24,7 +24,7 @@ export default function About() {
                 <Row className="no-gutters bg-transparent">
 
                     <Col md="4" className="pb-4">
-                        <img src={source} className="card-img rounded-0"
+                        <img src={source} className="card-img rounded-circle"
                             alt="Susan Holland profile" onLoad={() => {setLoaded(true)}} />
                     </Col>
 
