@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import About from "./components/pages/About";
 import Portfolio from "./components/pages/Portfolio";
 import Footer from "./components/Footer";
-import greenLight from "./assets/greenLight.webp";
+import greenLight from "./assets/greenLight2.webp";
 
 function App() {
 
